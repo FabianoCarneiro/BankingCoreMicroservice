@@ -93,3 +93,4 @@
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net10.0/ref/Core.API.dll
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/bin/Debug/net10.0/Core.API.xml
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net10.0/Core.API.xml
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net10.0/Core.API.sourcelink.json

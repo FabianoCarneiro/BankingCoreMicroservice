@@ -15,3 +15,4 @@
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net10.0/refint/Core.Infrastructure.dll
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net10.0/Core.Infrastructure.pdb
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net10.0/ref/Core.Infrastructure.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net10.0/Core.Infrastructure.sourcelink.json

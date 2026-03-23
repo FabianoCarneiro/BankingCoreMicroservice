@@ -13,3 +13,4 @@
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net10.0/refint/Core.Application.dll
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net10.0/Core.Application.pdb
 /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net10.0/ref/Core.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net10.0/Core.Application.sourcelink.json
