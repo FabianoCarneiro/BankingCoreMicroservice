@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core.API</name>
+    </assembly>
+    <members>
+        <member name="T:Core.API.Controllers.AccountsController">
+            <summary>
+            Controlador REST para operações de contas bancárias
+            </summary>
+        </member>
+        <member name="M:Core.API.Controllers.AccountsController.CreateAccount(Core.Application.DTOs.CreateBankAccountDTO)">
+            <summary>
+            Criar nova conta corrente
+            </summary>
+        </member>
+        <member name="M:Core.API.Controllers.AccountsController.GetBalance(System.String)">
+            <summary>
+            Obter saldo da conta
+            </summary>
+        </member>
+        <member name="M:Core.API.Controllers.AccountsController.GetStatement(System.String)">
+            <summary>
+            Obter extrato da conta
+            </summary>
+        </member>
+        <member name="M:Core.API.Controllers.AccountsController.Transfer(Core.API.Controllers.TransferRequestDTO)">
+            <summary>
+            Realizar transferência (TED/PIX)
+            </summary>
+        </member>
+        <member name="T:Core.API.Controllers.CustomersController">
+            <summary>
+            Controlador REST para operações de clientes (KYC)
+            </summary>
+        </member>
+        <member name="M:Core.API.Controllers.CustomersController.CreateCustomer(Core.Application.DTOs.CreateCustomerDTO)">
+            <summary>
+            Criar novo cliente
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

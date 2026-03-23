@@ -1,0 +1,17 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Infrastructure.deps.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Infrastructure.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Infrastructure.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Domain.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Domain.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/bin/Debug/net8.0/Core.Application.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.csproj.AssemblyReference.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Inf.F45230EC.Up2Date
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/refint/Core.Infrastructure.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/Core.Infrastructure.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/obj/Debug/net8.0/ref/Core.Infrastructure.dll

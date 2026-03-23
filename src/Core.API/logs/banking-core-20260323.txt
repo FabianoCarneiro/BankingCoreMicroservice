@@ -1,0 +1,87 @@
+2026-03-23 15:59:18.369 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-23 15:59:18.515 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-23 15:59:18.521 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-23 15:59:18.522 -03:00 [INF] Hosting environment: Production
+2026-03-23 15:59:18.522 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-23 16:00:50.111 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-23 16:00:50.176 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-23 16:00:50.184 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 404 0 null 74.3806ms
+2026-03-23 16:00:50.283 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/swagger/index.html, Response status code: 404
+2026-03-23 16:00:51.221 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-03-23 16:00:51.224 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 3.5ms
+2026-03-23 16:00:51.225 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2026-03-23 16:04:12.505 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-23 16:04:12.508 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 404 0 null 3.4261ms
+2026-03-23 16:04:12.509 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/swagger/index.html, Response status code: 404
+2026-03-23 16:04:35.655 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-23 16:04:35.660 -03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-03-23 16:04:35.660 -03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-03-23 16:04:35.661 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 405 0 null 5.8915ms
+2026-03-23 16:05:27.835 -03:00 [INF] Application is shutting down...
+2026-03-23 16:09:58.924 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-23 16:09:59.065 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-23 16:09:59.071 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-23 16:09:59.072 -03:00 [INF] Hosting environment: Production
+2026-03-23 16:09:59.073 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-23 16:10:05.453 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-03-23 16:10:05.483 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-23 16:10:05.490 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 38.6284ms
+2026-03-23 16:10:05.493 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-03-23 16:11:03.131 -03:00 [INF] Application is shutting down...
+2026-03-23 16:13:11.164 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-23 16:13:11.327 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-23 16:13:11.332 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-23 16:13:11.332 -03:00 [INF] Hosting environment: Production
+2026-03-23 16:13:11.333 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-23 16:13:36.325 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-23 16:13:36.519 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 197.2804ms
+2026-03-23 16:13:36.539 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2026-03-23 16:13:36.546 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2026-03-23 16:13:36.547 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-23 16:13:36.568 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-23 16:13:36.568 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-23 16:13:36.570 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 144929 text/css 31.1809ms
+2026-03-23 16:13:36.570 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 23.746ms
+2026-03-23 16:13:36.580 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-23 16:13:36.580 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 33.9971ms
+2026-03-23 16:13:36.978 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-23 16:13:37.145 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.9583ms
+2026-03-23 16:13:49.715 -03:00 [INF] Application is shutting down...
+2026-03-23 16:17:43.806 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-23 16:17:43.946 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-23 16:17:43.951 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-23 16:17:43.951 -03:00 [INF] Hosting environment: Production
+2026-03-23 16:17:43.951 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-23 16:17:54.936 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-23 16:17:55.082 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 148.4742ms
+2026-03-23 16:17:55.095 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2026-03-23 16:17:55.096 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2026-03-23 16:17:55.096 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-23 16:17:55.123 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-23 16:17:55.123 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-23 16:17:55.123 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-23 16:17:55.125 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 144929 text/css 30.5472ms
+2026-03-23 16:17:55.125 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 29.1418ms
+2026-03-23 16:17:55.125 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 29.5128ms
+2026-03-23 16:17:55.331 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-23 16:17:55.480 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 149.6834ms
+2026-03-23 16:18:40.660 -03:00 [INF] Application is shutting down...
+2026-03-23 16:18:52.996 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-23 16:18:53.120 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-23 16:18:53.124 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-23 16:18:53.124 -03:00 [INF] Hosting environment: Production
+2026-03-23 16:18:53.124 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-23 16:19:09.058 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - null null
+2026-03-23 16:19:09.058 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - null null
+2026-03-23 16:19:09.058 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-03-23 16:19:09.119 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-23 16:19:09.126 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 70.4374ms
+2026-03-23 16:19:09.126 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - 404 0 null 70.4628ms
+2026-03-23 16:19:09.126 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - 404 0 null 70.4385ms
+2026-03-23 16:19:09.129 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon-precomposed.png, Response status code: 404
+2026-03-23 16:19:09.129 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon.png, Response status code: 404
+2026-03-23 16:19:09.129 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2026-03-23 16:20:25.652 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-23 16:20:25.781 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 129.4261ms
+2026-03-23 16:20:26.038 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-23 16:20:26.220 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 181.6865ms

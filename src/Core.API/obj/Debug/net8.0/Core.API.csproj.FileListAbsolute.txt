@@ -1,0 +1,8 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.csproj.AssemblyReference.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/rpswa.dswa.cache.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.MvcApplicationPartsAssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/obj/Debug/net8.0/Core.API.MvcApplicationPartsAssemblyInfo.cache

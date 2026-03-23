@@ -1,0 +1,15 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/bin/Debug/net8.0/Core.Application.deps.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/bin/Debug/net8.0/Core.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/bin/Debug/net8.0/Core.Application.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/bin/Debug/net8.0/Core.Domain.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/bin/Debug/net8.0/Core.Domain.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.csproj.AssemblyReference.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.App.01B2A2D7.Up2Date
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/refint/Core.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/Core.Application.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Application/obj/Debug/net8.0/ref/Core.Application.dll
