@@ -39,7 +39,7 @@ Sistema responsável por operações críticas de um banco digital:
 
 ## 🔧 Tecnologias
 
-- .NET 8
+- .NET 10
 - Entity Framework Core
 - MediatR
 - Fluent Validation
