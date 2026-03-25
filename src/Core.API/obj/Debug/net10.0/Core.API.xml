@@ -39,6 +39,29 @@
             Criar novo cliente
             </summary>
         </member>
+        <member name="M:Core.API.Controllers.CustomersController.GetCustomerById(System.Guid)">
+            <summary>
+            Obter cliente por ID
+            </summary>
+            <param name="id">ID do cliente</param>
+            <returns>Dados do cliente</returns>
+        </member>
+        <member name="M:Core.API.Controllers.CustomersController.ListAllCustomers">
+            <summary>
+            Listar todos os clientes
+            </summary>
+            <returns>Lista de clientes</returns>
+        </member>
+        <member name="T:Core.API.Middlewares.DatabaseInitializationMiddleware">
+            <summary>
+            Middleware que garante que o banco de dados está inicializado com dados de teste
+            </summary>
+        </member>
+        <member name="T:Core.API.Middlewares.DatabaseInitializationMiddlewareExtensions">
+            <summary>
+            Extensão para registrar o middleware
+            </summary>
+        </member>
         <member name="T:Program">
             <summary>
             Auto-generated public partial Program class for top-level statement apps.

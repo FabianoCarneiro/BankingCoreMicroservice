@@ -1,3 +1,4 @@
+using Core.API.Middlewares;
 using Core.Application.UseCases;
 using Core.Domain.Ports;
 using Core.Infrastructure.Adapters;
@@ -44,19 +45,39 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // Configurar banco de dados
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
-    ?? "Server=(localdb)\\mssqllocaldb;Database=BankingCore;Trusted_Connection=true;";
+// Suporte para SQLite (padrão) ou SQL Server
+var databaseType = Environment.GetEnvironmentVariable("DATABASE_TYPE") ?? "sqlite";
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<BankingContext>(options =>
-    options.UseSqlServer(connectionString, sqlOptions =>
-        sqlOptions.MigrationsAssembly("Core.Infrastructure")
-    )
-);
+{
+    if (databaseType.ToLower() == "sqlite")
+    {
+        // SQLite - simples, sem instalação necessária
+        var sqliteConnection = connectionString ?? "Data Source=banking.db";
+        options.UseSqlite(sqliteConnection);
+        Log.Information($"Usando SQLite: {sqliteConnection}");
+    }
+    else
+    {
+        // SQL Server - padrão original
+        var sqlServerConnection = connectionString ?? "Server=(localdb)\\mssqllocaldb;Database=BankingCore;Trusted_Connection=true;";
+        options.UseSqlServer(sqlServerConnection, sqlOptions =>
+            sqlOptions.MigrationsAssembly("Core.Infrastructure")
+        );
+        Log.Information($"Usando SQL Server: {sqlServerConnection}");
+    }
+});
 
 // Registrar portas e adaptadores (Injeção de Dependência)
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IBankAccountRepository, BankAccountRepository>();
 builder.Services.AddScoped<INotificationService, EmailNotificationService>();
+
+// Registrar casos de uso de clientes
+builder.Services.AddScoped<CreateCustomerUseCase>();
+builder.Services.AddScoped<GetCustomerByIdUseCase>();
+builder.Services.AddScoped<ListAllCustomersUseCase>();
 
 // Registrar casos de uso
 builder.Services.AddScoped<CreateCustomerUseCase>();
@@ -66,6 +87,9 @@ builder.Services.AddScoped<TransferUseCase>();
 var app = builder.Build();
 
 // Configurar pipeline HTTP
+// Middleware para inicializar banco de dados com dados de teste
+app.UseDatabaseInitialization();
+
 // Sempre habilitar Swagger para facilitar testes
 app.UseSwagger();
 app.UseSwaggerUI(options =>
@@ -73,17 +97,6 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "Banking Core API v1.0");
     options.RoutePrefix = "swagger";
 });
-
-if (app.Environment.IsDevelopment())
-{
-    // Criar banco de dados e aplicar migrations
-    using (var scope = app.Services.CreateScope())
-    {
-        var dbContext = scope.ServiceProvider.GetRequiredService<BankingContext>();
-        dbContext.Database.EnsureCreated();
-        Log.Information("Banco de dados criado/verificado");
-    }
-}
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

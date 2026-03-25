@@ -1,0 +1,547 @@
+2026-03-24 21:58:00.373 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-24 21:58:00.560 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-24 21:58:00.566 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 21:58:00.566 -03:00 [INF] Hosting environment: Production
+2026-03-24 21:58:00.566 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-24 21:58:28.868 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-24 21:58:28.967 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-24 21:58:28.973 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 21:58:29.018 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 21:58:29.120 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 21:58:30.922 -03:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 21:58:30.959 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Core.Infrastructure.Persistence.BankingContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-24 21:58:30.971 -03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 21:58:31.029 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 2004.7059ms
+2026-03-24 21:58:31.030 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 21:58:31.046 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 500 null application/json; charset=utf-8 2179.6675ms
+2026-03-24 21:59:27.829 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-24 21:59:27.836 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 21:59:27.836 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 21:59:27.836 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 21:59:27.867 -03:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 21:59:27.868 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Core.Infrastructure.Persistence.BankingContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-24 21:59:27.871 -03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 21:59:27.872 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 35.3274ms
+2026-03-24 21:59:27.872 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 21:59:27.872 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 500 null application/json; charset=utf-8 43.1524ms
+2026-03-24 22:00:06.832 -03:00 [INF] Application is shutting down...
+2026-03-24 22:00:34.054 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-24 22:00:34.229 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-24 22:00:34.234 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:00:34.235 -03:00 [INF] Hosting environment: Production
+2026-03-24 22:00:34.235 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-24 22:00:55.706 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-24 22:00:55.834 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:00:55.959 -03:00 [INF] Inicializando banco de dados...
+2026-03-24 22:00:56.936 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-03-24 22:00:57.099 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "BankAccounts" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_BankAccounts" PRIMARY KEY,
+    "CustomerId" TEXT NOT NULL,
+    "AccountNumber" TEXT NOT NULL,
+    "Branch" TEXT NOT NULL,
+    "Balance" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ClosedAt" TEXT NULL,
+    "IsActive" INTEGER NOT NULL
+);
+2026-03-24 22:00:57.099 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "CPF" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "UpdatedAt" TEXT NULL,
+    "IsActive" INTEGER NOT NULL
+);
+2026-03-24 22:00:57.100 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Transactions" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Transactions" PRIMARY KEY,
+    "AccountId" TEXT NOT NULL,
+    "Type" INTEGER NOT NULL,
+    "Amount" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "IsProcessed" INTEGER NOT NULL,
+    CONSTRAINT "FK_Transactions_BankAccounts_AccountId" FOREIGN KEY ("AccountId") REFERENCES "BankAccounts" ("Id") ON DELETE CASCADE
+);
+2026-03-24 22:00:57.100 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Transactions_AccountId" ON "Transactions" ("AccountId");
+2026-03-24 22:00:57.129 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:00:57.153 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2026-03-24 22:00:57.157 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:00:57.166 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-24 22:00:57.189 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-24 22:00:57.452 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS "c")
+2026-03-24 22:00:57.460 -03:00 [ERR] Erro ao inicializar banco de dados
+System.AggregateException: One or more errors occurred. (Erro ao seed do banco de dados)
+ ---> System.Exception: Erro ao seed do banco de dados
+ ---> System.ArgumentException: CPF inválido (Parameter 'value')
+   at Core.Domain.ValueObjects.CPF..ctor(String value) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Domain/ValueObjects/CPF.cs:line 18
+   at Core.Domain.Entities.Customer..ctor(String cpf, String name, String email, String phoneNumber) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Domain/Entities/Customer.cs:line 22
+   at Core.Infrastructure.Persistence.BankingContextSeed.SeedAsync(BankingContext context) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/Persistence/BankingContextSeed.cs:line 29
+   --- End of inner exception stack trace ---
+   at Core.Infrastructure.Persistence.BankingContextSeed.SeedAsync(BankingContext context) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/Persistence/BankingContextSeed.cs:line 88
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Core.API.Middlewares.DatabaseInitializationMiddleware.InvokeAsync(HttpContext context, BankingContext dbContext, ILogger`1 logger) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/Middlewares/DatabaseInitializationMiddleware.cs:line 36
+2026-03-24 22:00:57.527 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-24 22:00:57.534 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:00:57.566 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:00:57.630 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 22:00:57.639 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:00:57.702 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 130.051ms
+2026-03-24 22:00:57.703 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:00:57.714 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 200 null application/json; charset=utf-8 2010.3359ms
+2026-03-24 22:01:09.293 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-24 22:01:09.296 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:01:09.297 -03:00 [INF] Inicializando banco de dados...
+2026-03-24 22:01:09.339 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-03-24 22:01:09.342 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:01:09.343 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:01:09.349 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-24 22:01:09.349 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-24 22:01:09.352 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS "c")
+2026-03-24 22:01:09.353 -03:00 [ERR] Erro ao inicializar banco de dados
+System.AggregateException: One or more errors occurred. (Erro ao seed do banco de dados)
+ ---> System.Exception: Erro ao seed do banco de dados
+ ---> System.ArgumentException: CPF inválido (Parameter 'value')
+   at Core.Domain.ValueObjects.CPF..ctor(String value) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Domain/ValueObjects/CPF.cs:line 18
+   at Core.Domain.Entities.Customer..ctor(String cpf, String name, String email, String phoneNumber) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Domain/Entities/Customer.cs:line 22
+   at Core.Infrastructure.Persistence.BankingContextSeed.SeedAsync(BankingContext context) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/Persistence/BankingContextSeed.cs:line 29
+   --- End of inner exception stack trace ---
+   at Core.Infrastructure.Persistence.BankingContextSeed.SeedAsync(BankingContext context) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.Infrastructure/Persistence/BankingContextSeed.cs:line 88
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Core.API.Middlewares.DatabaseInitializationMiddleware.InvokeAsync(HttpContext context, BankingContext dbContext, ILogger`1 logger) in /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API/Middlewares/DatabaseInitializationMiddleware.cs:line 36
+2026-03-24 22:01:09.355 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:01:09.356 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:01:09.358 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 22:01:09.358 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:01:09.359 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 3.0348ms
+2026-03-24 22:01:09.360 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:01:09.360 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 200 null application/json; charset=utf-8 67.5865ms
+2026-03-24 22:01:39.469 -03:00 [INF] Application is shutting down...
+2026-03-24 22:02:32.381 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-24 22:02:32.556 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-24 22:02:32.562 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:02:32.563 -03:00 [INF] Hosting environment: Production
+2026-03-24 22:02:32.563 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-24 22:02:55.172 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-24 22:02:55.323 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:02:55.442 -03:00 [INF] Inicializando banco de dados...
+2026-03-24 22:02:56.415 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-03-24 22:02:56.448 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:02:56.454 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:02:56.477 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-24 22:02:56.503 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-24 22:02:56.837 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS "c")
+2026-03-24 22:02:57.120 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 17), @p4='?' (DbType = Boolean), @p5='?' (Size = 12), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.124 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 15), @p4='?' (DbType = Boolean), @p5='?' (Size = 9), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.125 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 17), @p4='?' (DbType = Boolean), @p5='?' (Size = 14), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.126 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 16), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.215 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.216 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.217 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.217 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:02:57.281 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 10), @p3='?' (DbType = DateTime), @p4='?' (Size = 22), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transactions" ("Id", "AccountId", "Amount", "CreatedAt", "Description", "IsProcessed", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-24 22:02:57.283 -03:00 [INF] Banco de dados inicializado com sucesso
+2026-03-24 22:02:57.326 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-24 22:02:57.336 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:02:57.375 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:02:57.431 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 22:02:57.448 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:02:57.520 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 138.4421ms
+2026-03-24 22:02:57.521 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:02:57.532 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 200 null application/json; charset=utf-8 2366.7123ms
+2026-03-24 22:03:01.419 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/customers - null null
+2026-03-24 22:03:01.423 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:03:01.429 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:03:01.430 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:03:01.467 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 22:03:01.478 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:03:01.479 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 48.1314ms
+2026-03-24 22:03:01.479 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:03:01.480 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/customers - 200 null application/json; charset=utf-8 61.1233ms
+2026-03-24 22:12:20.137 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-24 22:12:20.173 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:12:20.369 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 236.8972ms
+2026-03-24 22:12:20.832 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-24 22:12:20.832 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:12:21.170 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 338.0293ms
+2026-03-24 22:12:52.469 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Accounts - application/json 58
+2026-03-24 22:12:52.474 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:12:52.481 -03:00 [INF] Executing endpoint 'Core.API.Controllers.AccountsController.CreateAccount (Core.API)'
+2026-03-24 22:12:52.541 -03:00 [INF] Route matched with {action = "CreateAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccount(Core.Application.DTOs.CreateBankAccountDTO) on controller Core.API.Controllers.AccountsController (Core.API).
+2026-03-24 22:12:52.875 -03:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__id_0
+LIMIT 1
+2026-03-24 22:12:52.915 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Core.Infrastructure.Persistence.BankingContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-24 22:12:52.918 -03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 22:12:52.928 -03:00 [INF] Executed action Core.API.Controllers.AccountsController.CreateAccount (Core.API) in 385.6591ms
+2026-03-24 22:12:52.929 -03:00 [INF] Executed endpoint 'Core.API.Controllers.AccountsController.CreateAccount (Core.API)'
+2026-03-24 22:12:52.930 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Accounts - 500 null application/json; charset=utf-8 461.7691ms
+2026-03-24 22:18:26.880 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-24 22:18:26.887 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:18:26.913 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 32.8476ms
+2026-03-24 22:18:27.632 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-24 22:18:27.633 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:18:27.739 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.4811ms
+2026-03-24 22:19:13.469 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Accounts - application/json 58
+2026-03-24 22:19:13.472 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:19:13.475 -03:00 [INF] Executing endpoint 'Core.API.Controllers.AccountsController.CreateAccount (Core.API)'
+2026-03-24 22:19:13.480 -03:00 [INF] Route matched with {action = "CreateAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccount(Core.Application.DTOs.CreateBankAccountDTO) on controller Core.API.Controllers.AccountsController (Core.API).
+2026-03-24 22:19:13.529 -03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__id_0
+LIMIT 1
+2026-03-24 22:19:13.540 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Core.Infrastructure.Persistence.BankingContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Customers'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-03-24 22:19:13.543 -03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 22:19:13.545 -03:00 [INF] Executed action Core.API.Controllers.AccountsController.CreateAccount (Core.API) in 63.7544ms
+2026-03-24 22:19:13.545 -03:00 [INF] Executed endpoint 'Core.API.Controllers.AccountsController.CreateAccount (Core.API)'
+2026-03-24 22:19:13.546 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Accounts - 500 null application/json; charset=utf-8 76.5766ms
+2026-03-24 22:21:30.452 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-24 22:21:30.459 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:21:30.468 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 17.0478ms
+2026-03-24 22:21:30.600 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-24 22:21:30.601 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:21:30.634 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.5637ms
+2026-03-24 22:21:31.529 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-24 22:21:31.529 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:21:31.530 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 1.3248ms
+2026-03-24 22:21:31.601 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-24 22:21:31.602 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:21:31.622 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.4807ms
+2026-03-24 22:21:46.196 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-24 22:21:46.202 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:21:46.221 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 24.9565ms
+2026-03-24 22:21:46.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-24 22:21:46.309 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:21:46.322 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.8883ms
+2026-03-24 22:23:00.489 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-03-24 22:23:00.718 -03:00 [INF] Now listening on: http://localhost:5000
+2026-03-24 22:23:00.724 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:23:00.724 -03:00 [INF] Hosting environment: Production
+2026-03-24 22:23:00.725 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-03-24 22:24:42.119 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - null null
+2026-03-24 22:24:42.119 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - null null
+2026-03-24 22:24:42.119 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-03-24 22:24:42.291 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:24:42.291 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:24:42.291 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:24:42.452 -03:00 [INF] Inicializando banco de dados...
+2026-03-24 22:24:43.544 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2026-03-24 22:24:43.717 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "BankAccounts" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_BankAccounts" PRIMARY KEY,
+    "CustomerId" TEXT NOT NULL,
+    "AccountNumber" TEXT NOT NULL,
+    "Branch" TEXT NOT NULL,
+    "Balance" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "ClosedAt" TEXT NULL,
+    "IsActive" INTEGER NOT NULL
+);
+2026-03-24 22:24:43.718 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "CPF" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "UpdatedAt" TEXT NULL,
+    "IsActive" INTEGER NOT NULL
+);
+2026-03-24 22:24:43.718 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Transactions" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Transactions" PRIMARY KEY,
+    "AccountId" TEXT NOT NULL,
+    "Type" INTEGER NOT NULL,
+    "Amount" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "CreatedAt" TEXT NOT NULL,
+    "IsProcessed" INTEGER NOT NULL,
+    CONSTRAINT "FK_Transactions_BankAccounts_AccountId" FOREIGN KEY ("AccountId") REFERENCES "BankAccounts" ("Id") ON DELETE CASCADE
+);
+2026-03-24 22:24:43.719 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Transactions_AccountId" ON "Transactions" ("AccountId");
+2026-03-24 22:24:43.753 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:24:43.774 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2026-03-24 22:24:43.777 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-03-24 22:24:43.784 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-03-24 22:24:43.810 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-03-24 22:24:44.092 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS "c")
+2026-03-24 22:24:44.394 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 17), @p4='?' (DbType = Boolean), @p5='?' (Size = 14), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.399 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 17), @p4='?' (DbType = Boolean), @p5='?' (Size = 12), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.401 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 15), @p4='?' (DbType = Boolean), @p5='?' (Size = 9), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.401 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 16), @p4='?' (DbType = Boolean), @p5='?' (Size = 10), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.479 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.480 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.481 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.481 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (Size = 5), @p3='?' (Size = 4), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid), @p7='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "BankAccounts" ("Id", "AccountNumber", "Balance", "Branch", "ClosedAt", "CreatedAt", "CustomerId", "IsActive")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:24:44.536 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 10), @p3='?' (DbType = DateTime), @p4='?' (Size = 22), @p5='?' (DbType = Boolean), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Transactions" ("Id", "AccountId", "Amount", "CreatedAt", "Description", "IsProcessed", "Type")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-24 22:24:44.538 -03:00 [INF] Banco de dados inicializado com sucesso
+2026-03-24 22:24:44.591 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-24 22:24:44.603 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - 404 0 null 2488.7487ms
+2026-03-24 22:24:44.603 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 2488.8493ms
+2026-03-24 22:24:44.607 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2026-03-24 22:24:44.607 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon-precomposed.png, Response status code: 404
+2026-03-24 22:24:44.608 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - 404 0 null 2494.2554ms
+2026-03-24 22:24:44.608 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon.png, Response status code: 404
+2026-03-24 22:26:45.530 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-03-24 22:26:45.593 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:26:45.786 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 257.8836ms
+2026-03-24 22:26:46.113 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-03-24 22:26:46.114 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:26:46.330 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 216.6093ms
+2026-03-24 22:27:02.044 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customers - null null
+2026-03-24 22:27:02.048 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:27:02.053 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:27:02.102 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:27:02.224 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-03-24 22:27:02.245 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:27:02.274 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 165.8265ms
+2026-03-24 22:27:02.274 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-03-24 22:27:02.275 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customers - 200 null application/json; charset=utf-8 230.8335ms
+2026-03-24 22:27:44.921 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customers - application/json 89
+2026-03-24 22:27:44.924 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:27:44.925 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-03-24 22:27:44.950 -03:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomer(Core.Application.DTOs.CreateCustomerDTO) on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:27:45.015 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 22:27:45.024 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.CreateCustomer (Core.API) in 73.2136ms
+2026-03-24 22:27:45.024 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-03-24 22:27:45.025 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customers - 400 null application/json; charset=utf-8 103.1846ms
+2026-03-24 22:28:31.319 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customers - application/json 94
+2026-03-24 22:28:31.320 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:28:31.321 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-03-24 22:28:31.322 -03:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomer(Core.Application.DTOs.CreateCustomerDTO) on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:28:31.457 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 6), @p4='?' (DbType = Boolean), @p5='?' (Size = 6), @p6='?' (Size = 6), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:28:31.461 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'Core.Application.DTOs.CustomerDTO'.
+2026-03-24 22:28:31.495 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.CreateCustomer (Core.API) in 173.0571ms
+2026-03-24 22:28:31.496 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-03-24 22:28:31.496 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customers - 201 null application/json; charset=utf-8 176.9584ms
+2026-03-24 22:29:25.060 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customers - application/json 118
+2026-03-24 22:29:25.062 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:29:25.062 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-03-24 22:29:25.063 -03:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomer(Core.Application.DTOs.CreateCustomerDTO) on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:29:25.100 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (DbType = DateTime), @p3='?' (Size = 17), @p4='?' (DbType = Boolean), @p5='?' (Size = 14), @p6='?' (Size = 11), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Id", "CPF", "CreatedAt", "Email", "IsActive", "Name", "PhoneNumber", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 22:29:25.102 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'Core.Application.DTOs.CustomerDTO'.
+2026-03-24 22:29:25.104 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.CreateCustomer (Core.API) in 40.4448ms
+2026-03-24 22:29:25.104 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-03-24 22:29:25.105 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customers - 201 null application/json; charset=utf-8 44.5869ms
+2026-03-24 22:30:30.761 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customers/149659E5-98DF-46D5-B89F-3A4A13E3E327 - null null
+2026-03-24 22:30:30.763 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-03-24 22:30:30.764 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.GetCustomerById (Core.API)'
+2026-03-24 22:30:30.791 -03:00 [INF] Route matched with {action = "GetCustomerById", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerById(System.Guid) on controller Core.API.Controllers.CustomersController (Core.API).
+2026-03-24 22:30:30.874 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__id_0
+LIMIT 1
+2026-03-24 22:30:30.875 -03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Application.DTOs.CustomerDTO'.
+2026-03-24 22:30:30.875 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.GetCustomerById (Core.API) in 83.9365ms
+2026-03-24 22:30:30.876 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.GetCustomerById (Core.API)'
+2026-03-24 22:30:30.876 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customers/149659E5-98DF-46D5-B89F-3A4A13E3E327 - 200 null application/json; charset=utf-8 114.3862ms
+2026-03-24 22:31:26.439 -03:00 [INF] Application is shutting down...
