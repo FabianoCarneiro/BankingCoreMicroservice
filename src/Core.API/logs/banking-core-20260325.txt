@@ -124,3 +124,4 @@ LIMIT 1
 2026-03-25 15:19:40.989 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.GetCustomerById (Core.API) in 336.5978ms
 2026-03-25 15:19:40.989 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.GetCustomerById (Core.API)'
 2026-03-25 15:19:40.989 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customers/4819721d-f4b4-46b9-a709-a658df26f7b3 - 200 null application/json; charset=utf-8 408.7073ms
+2026-03-25 15:47:05.184 -03:00 [INF] Application is shutting down...
