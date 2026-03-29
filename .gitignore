@@ -1,0 +1,299 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options directory
+.vs/
+.vscode/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+launch.json
+settings.json
+
+# Rider specific files and folders
+.idea/
+*.sln.iml
+*.swp
+*.swo
+*.swn
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.dll
+*.exe
+*.pdb
+
+# NuGet Symbol Packages
+*.snupkg
+
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Nuget personal access token and other secrets
+nuget.config
+
+# Cake - Uncomment this line if you do not want to ignore Cake's output directory
+# tools/
+
+# Tab Studio
+*.jmconfig
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# AxoCover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/HtmlHelp/
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+
+# Publish XML Report
+*.publishsettings
+*.publishprof
+*.pssc
+*.psd1
+*.ps1
+*.pem
+
+# RIA/Silverlight projects
+Generated_Code/
+
+# Backup & swp files
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+*.tmp
+
+# Vim backup files
+.*.swp
+.*.swo
+*~
+
+# Sass-compiled
+.sass-cache
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# SonarQube Scanner
+.sonarqube/
+.sonarlint/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# Application Insights
+ApplicationInsights.config
+
+# Local app config overrides
+appsettings.local.json
+appsettings.*.local.json
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Docker
+docker-compose.override.yml
+
+# Yarn
+node_modules/
+yarn-error.log
+npm-debug.log
+package-lock.json
+
+# Azure
+.azure/
+local.settings.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# MSBuild artifacts
+*.metaproj
+*.metaproj.tmp
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+out/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ReSharper additional files
+*.DotSettings
+*.DotSettings.user
+
+# BranchCache
+.bcache/
+
+# VS Code specific
+.vscode-test
+.vscode-test-resources
+
+# Exclude large files
+*.iso
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.Trash-*
+
+# Windows
+$RECYCLE.BIN/
+ehthumbs.db
+Desktop.ini
+
+# Generated documentation
+docs/_build/
+site/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project-specific
+logs/
+data/
+*.db
+customer.db
+banking.db
+
+# Build artifacts
+artifacts/
+dist/
+build/
+
+# NuGet
+.nuget/
+NuGetPackage.config
+
+# Entity Framework Core
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json

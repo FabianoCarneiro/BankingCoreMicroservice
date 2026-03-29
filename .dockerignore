@@ -1,0 +1,18 @@
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker build artifacts
+Dockerfile.*
+.dockerignore
+
+# Container volume data
+volumes/
+data/
+db/
+
+# Docker environment
+.env.docker
+.env.docker.local
+docker.env
