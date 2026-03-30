@@ -57,4 +57,5 @@ jobs:
       with:
         dotnet-version: 10.0.x
     - name: TestIntegration
-      run: dotnet test tests/Core.Tests/Core.Tests.csproj --filter 'Integration&FullyQualifiedName!~ErrorSimulation'
+      run: dotnet test tests/Core.Tests/Core.Tests.csproj --filter 'Integration&FullyQualifiedName!~ErrorSimulation' --logger 'trx' --result-directory ./TestResults
+      
