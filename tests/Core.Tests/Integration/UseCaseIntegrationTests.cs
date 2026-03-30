@@ -51,8 +51,9 @@ public class CreateCustomerUseCaseIntegrationTests
         
         // Verify persistence
         var savedCustomer = await dbContext.Customers.FindAsync(customerDto.Id);
+        
         Assert.NotNull(savedCustomer);
-        Assert.Equal("João Silva", savedCustomer.Name);
+        Assert.Equal("João Silva", savedCustomer.Name); 
     }
 
     [Fact]

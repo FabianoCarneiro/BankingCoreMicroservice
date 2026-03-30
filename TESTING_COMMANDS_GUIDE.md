@@ -23,13 +23,51 @@ Não há separação automática - tudo executa junto!
 └─ UseCases/CustomerUseCasesTests.cs   (6 testes)
 
 15 Integration Tests (lentos)
-└─ Integration/...                     (3 testes rodam)
-   └─ ErrorSimulationTests.cs          (12 testes)
-   └─ (4 falhando, 5 pulados)
+└─ Integration/
+   ├─ UseCaseIntegrationTests.cs       (3 testes - PASSAM ✅)
+   └─ ErrorSimulationTests.cs          (12 testes - 4 falham, 5 pulados)
 
 ═══════════════════════════════════════
 TOTAL: 28 testes
 ```
+
+---
+
+## 🎯 Executar Testes por Arquivo/Classe
+
+### Rodar testes de integração EXCLUINDO ErrorSimulationTests
+
+Use o namespace da classe para filtrar:
+
+```
+--filter 'FullyQualifiedName~Integration&FullyQualifiedName!~ErrorSimulation'
+```
+
+Isso vai rodar apenas:
+- ✅ `UseCaseIntegrationTests` (todos os 3 testes passam)
+- ❌ Não executa `ErrorSimulationTests` (12 testes pulados)
+
+---
+
+### Rodar APENAS ErrorSimulationTests
+
+```
+--filter 'ErrorSimulation'
+```
+
+Isso vai rodar:
+- ✅ Todos os 12 testes (3 passam, 4 falham, 5 pulados)
+
+---
+
+### Rodar APENAS UseCaseIntegrationTests
+
+```
+--filter 'UseCaseIntegration'
+```
+
+Isso vai rodar:
+- ✅ Todos os 3 testes (todos passam)
 
 ---
 
