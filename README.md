@@ -2,7 +2,7 @@
 
 ## 📋 Visão Geral
 
-Microserviço de Core Bancário desenvolvido em .NET 8 seguindo os princípios de **Arquitetura Hexagonal (Ports & Adapters)**.
+Microserviço de Core Bancário desenvolvido em .NET 10 seguindo os princípios de **Arquitetura Hexagonal (Ports & Adapters)**.
 
 ### Contexto de Negócio
 
