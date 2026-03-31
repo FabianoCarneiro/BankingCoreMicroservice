@@ -58,7 +58,8 @@ jobs:
   
   SonarAnalysis:
     runs-on: ubuntu-latest
-
+    needs: UnitTest
+    
     steps:
       - name: Analyze with SonarCloud
 
