@@ -76,7 +76,7 @@ jobs:
             -Dsonar.projectKey=caixaeconomica_bankingcore
             -Dsonar.organization=caixaeconomica
             -Dsonar.sources=src
-            -Dsonar.tests=tests/Core.Tests
+            -Dsonar.tests=tests/Core.Tests/
             -Dsonar.coverage.exclusions=**/*Tests.cs,**/bin/**,**/obj/**
             -Dsonar.cpd.exclusions=**/*Tests.cs
             # Comma-separated paths to directories containing main source files.
