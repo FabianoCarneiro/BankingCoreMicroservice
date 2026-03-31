@@ -1,0 +1,12 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/bin/Debug/net10.0/Customer.Domain.deps.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/bin/Debug/net10.0/Customer.Domain.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/bin/Debug/net10.0/Customer.Domain.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.sourcelink.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/refint/Customer.Domain.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/Customer.Domain.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Domain/obj/Debug/net10.0/ref/Customer.Domain.dll

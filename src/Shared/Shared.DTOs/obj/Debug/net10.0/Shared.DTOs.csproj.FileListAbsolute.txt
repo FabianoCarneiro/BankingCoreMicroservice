@@ -1,0 +1,12 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/bin/Debug/net10.0/Shared.DTOs.deps.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/bin/Debug/net10.0/Shared.DTOs.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/bin/Debug/net10.0/Shared.DTOs.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.sourcelink.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/refint/Shared.DTOs.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/Shared.DTOs.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.DTOs/obj/Debug/net10.0/ref/Shared.DTOs.dll

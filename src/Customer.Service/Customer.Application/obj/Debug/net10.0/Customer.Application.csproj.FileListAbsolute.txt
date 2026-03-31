@@ -1,0 +1,16 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/bin/Debug/net10.0/Customer.Application.deps.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/bin/Debug/net10.0/Customer.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/bin/Debug/net10.0/Customer.Application.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/bin/Debug/net10.0/Customer.Domain.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/bin/Debug/net10.0/Customer.Domain.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.csproj.AssemblyReference.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.sourcelink.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.D662BFEF.Up2Date
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/refint/Customer.Application.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/Customer.Application.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Customer.Service/Customer.Application/obj/Debug/net10.0/ref/Customer.Application.dll

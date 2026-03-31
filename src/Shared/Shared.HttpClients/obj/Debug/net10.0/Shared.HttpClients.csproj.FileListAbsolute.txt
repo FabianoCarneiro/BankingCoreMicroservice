@@ -1,0 +1,16 @@
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.csproj.AssemblyReference.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.AssemblyInfoInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.AssemblyInfo.cs
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.csproj.CoreCompileInputs.cache
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.sourcelink.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/bin/Debug/net10.0/Shared.HttpClients.deps.json
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/bin/Debug/net10.0/Shared.HttpClients.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/bin/Debug/net10.0/Shared.HttpClients.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/bin/Debug/net10.0/Shared.DTOs.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/bin/Debug/net10.0/Shared.DTOs.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.H.45DB4346.Up2Date
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/refint/Shared.HttpClients.dll
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/Shared.HttpClients.pdb
+/Users/fabianocarneiro/BankingCoreMicroservice/src/Shared/Shared.HttpClients/obj/Debug/net10.0/ref/Shared.HttpClients.dll

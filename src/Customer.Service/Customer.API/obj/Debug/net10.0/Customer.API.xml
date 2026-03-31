@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Customer.API</name>
+    </assembly>
+    <members>
+        <member name="T:Customer.API.Controllers.CustomersController">
+            <summary>
+            Controller para gerenciar operações de clientes
+            </summary>
+        </member>
+        <member name="M:Customer.API.Controllers.CustomersController.CreateCustomer(Customer.Application.DTOs.CreateCustomerDTO)">
+            <summary>
+            Criar um novo cliente
+            </summary>
+            <param name="dto">Dados do cliente a criar</param>
+            <returns>Cliente criado</returns>
+        </member>
+        <member name="M:Customer.API.Controllers.CustomersController.GetCustomerById(System.Guid)">
+            <summary>
+            Obter um cliente por ID
+            </summary>
+            <param name="id">ID do cliente</param>
+            <returns>Cliente encontrado</returns>
+        </member>
+        <member name="M:Customer.API.Controllers.CustomersController.ListAllCustomers">
+            <summary>
+            Listar todos os clientes
+            </summary>
+            <returns>Lista de clientes</returns>
+        </member>
+        <member name="M:Customer.API.Controllers.CustomersController.UpdateCustomer(System.Guid,Customer.Application.DTOs.UpdateCustomerDTO)">
+            <summary>
+            Atualizar um cliente
+            </summary>
+            <param name="id">ID do cliente</param>
+            <param name="dto">Dados a atualizar</param>
+            <returns>Cliente atualizado</returns>
+        </member>
+        <member name="M:Customer.API.Controllers.CustomersController.DeleteCustomer(System.Guid)">
+            <summary>
+            Deletar um cliente
+            </summary>
+            <param name="id">ID do cliente</param>
+            <returns>Sem conteúdo</returns>
+        </member>
+        <member name="T:Customer.API.Middlewares.SeedDatabaseMiddleware">
+            <summary>
+            Middleware para inicializar o banco de dados com seed
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,221 @@
+using Core.Application.UseCases;
+using Core.Domain.Entities;
+using Core.Domain.Ports;
+using Core.Infrastructure.Adapters;
+using Core.Infrastructure.Persistence;
+using Core.Infrastructure.Notifications;
+using Core.Tests.Helpers;
+using Moq;
+using Xunit;
+
+namespace Core.Tests.Integration;
+
+/// <summary>
+/// Testes de integração para TransferUseCase
+/// Valida operações transacionais complexas
+/// </summary>
+[Collection("SQLite Collection")]
+public class TransferUseCaseIntegrationTests
+{
+    private readonly SqliteIntegrationTestFixture _fixture;
+
+    public TransferUseCaseIntegrationTests(SqliteIntegrationTestFixture fixture)
+    {
+        _fixture = fixture;
+    }
+
+    private async Task<(Customer, BankAccount, Customer, BankAccount)> SetupTwoCustomersWithAccountsAsync()
+    {
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        // Criar dois clientes com CPFs válidos
+        var sender = new Customer(
+            cpf: CpfGenerator.ValidCpfs.Customer1,
+            name: "Sender Customer",
+            email: "sender@test.com",
+            phoneNumber: "11999999999"
+        );
+
+        var recipient = new Customer(
+            cpf: CpfGenerator.ValidCpfs.Customer4,
+            name: "Recipient Customer",
+            email: "recipient@test.com",
+            phoneNumber: "11988888888"
+        );
+
+        dbContext.Customers.AddRange(sender, recipient);
+        await dbContext.SaveChangesAsync();
+
+        // Criar contas
+        var senderAccount = new BankAccount(sender.Id, "0001");
+        var recipientAccount = new BankAccount(recipient.Id, "0002");
+
+        dbContext.BankAccounts.AddRange(senderAccount, recipientAccount);
+        await dbContext.SaveChangesAsync();
+
+        // Fazer depósito na conta do remetente
+        senderAccount.Deposit(5000m, "Initial Balance");
+        await dbContext.SaveChangesAsync();
+
+        return (sender, senderAccount, recipient, recipientAccount);
+    }
+
+    [Fact]
+    public async Task ExecuteAsync_WithValidTransfer_ShouldUpdateBothAccounts()
+    {
+        // Arrange
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        var (sender, senderAccount, recipient, recipientAccount) = await SetupTwoCustomersWithAccountsAsync();
+
+        var repository = new BankAccountRepository(dbContext);
+        var notificationService = new Mock<INotificationService>();
+        var customerRepository = new CustomerRepository(dbContext);
+        
+        var useCase = new TransferUseCase(repository, notificationService.Object, customerRepository);
+
+        // Act
+        await useCase.ExecuteAsync(
+            fromAccountNumber: senderAccount.AccountNumber,
+            toAccountNumber: recipientAccount.AccountNumber,
+            amount: 1000m
+        );
+
+        // Assert - Verificar saldos após transferência
+        var updatedSenderAccount = dbContext.BankAccounts.First(a => a.Id == senderAccount.Id);
+        var updatedRecipientAccount = dbContext.BankAccounts.First(a => a.Id == recipientAccount.Id);
+
+        Assert.Equal(4000m, updatedSenderAccount.Balance.Amount);
+        Assert.Equal(1000m, updatedRecipientAccount.Balance.Amount);
+    }
+
+    [Fact]
+    public async Task ExecuteAsync_WithInsufficientBalance_ShouldFail()
+    {
+        // Arrange
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        var (sender, senderAccount, recipient, recipientAccount) = await SetupTwoCustomersWithAccountsAsync();
+
+        var repository = new BankAccountRepository(dbContext);
+        var notificationService = new Mock<INotificationService>();
+        var customerRepository = new CustomerRepository(dbContext);
+        
+        var useCase = new TransferUseCase(repository, notificationService.Object, customerRepository);
+
+        // Act & Assert
+        await Assert.ThrowsAsync<InvalidOperationException>(
+            () => useCase.ExecuteAsync(
+                fromAccountNumber: senderAccount.AccountNumber,
+                toAccountNumber: recipientAccount.AccountNumber,
+                amount: 10000m
+            )
+        );
+    }
+
+    [Fact]
+    public async Task ExecuteAsync_WithNegativeAmount_ShouldFail()
+    {
+        // Arrange
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        var (sender, senderAccount, recipient, recipientAccount) = await SetupTwoCustomersWithAccountsAsync();
+
+        var repository = new BankAccountRepository(dbContext);
+        var notificationService = new Mock<INotificationService>();
+        var customerRepository = new CustomerRepository(dbContext);
+        
+        var useCase = new TransferUseCase(repository, notificationService.Object, customerRepository);
+
+        // Act & Assert
+        await Assert.ThrowsAsync<ArgumentException>(
+            () => useCase.ExecuteAsync(
+                fromAccountNumber: senderAccount.AccountNumber,
+                toAccountNumber: recipientAccount.AccountNumber,
+                amount: -500m
+            )
+        );
+    }
+
+    [Fact]
+    public async Task ExecuteAsync_WithZeroAmount_ShouldFail()
+    {
+        // Arrange
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        var (sender, senderAccount, recipient, recipientAccount) = await SetupTwoCustomersWithAccountsAsync();
+
+        var repository = new BankAccountRepository(dbContext);
+        var notificationService = new Mock<INotificationService>();
+        var customerRepository = new CustomerRepository(dbContext);
+        
+        var useCase = new TransferUseCase(repository, notificationService.Object, customerRepository);
+
+        // Act & Assert
+        await Assert.ThrowsAsync<ArgumentException>(
+            () => useCase.ExecuteAsync(
+                fromAccountNumber: senderAccount.AccountNumber,
+                toAccountNumber: recipientAccount.AccountNumber,
+                amount: 0m
+            )
+        );
+    }
+
+    [Fact]
+    public async Task ExecuteAsync_SameAccount_ShouldFail()
+    {
+        // Arrange
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        var (sender, senderAccount, recipient, recipientAccount) = await SetupTwoCustomersWithAccountsAsync();
+
+        var repository = new BankAccountRepository(dbContext);
+        var notificationService = new Mock<INotificationService>();
+        var customerRepository = new CustomerRepository(dbContext);
+        
+        var useCase = new TransferUseCase(repository, notificationService.Object, customerRepository);
+
+        // Act & Assert
+        await Assert.ThrowsAsync<InvalidOperationException>(
+            () => useCase.ExecuteAsync(
+                fromAccountNumber: senderAccount.AccountNumber,
+                toAccountNumber: senderAccount.AccountNumber,
+                amount: 500m
+            )
+        );
+    }
+
+    [Fact]
+    public async Task MultipleTransfers_ShouldMaintainDataConsistency()
+    {
+        // Arrange
+        var dbContext = _fixture.DbContext;
+        Assert.NotNull(dbContext);
+
+        var (sender, senderAccount, recipient, recipientAccount) = await SetupTwoCustomersWithAccountsAsync();
+
+        var repository = new BankAccountRepository(dbContext);
+        var notificationService = new Mock<INotificationService>();
+        var customerRepository = new CustomerRepository(dbContext);
+        
+        var useCase = new TransferUseCase(repository, notificationService.Object, customerRepository);
+
+        // Act - Fazer múltiplas transferências
+        await useCase.ExecuteAsync(senderAccount.AccountNumber, recipientAccount.AccountNumber, 500m);
+        await useCase.ExecuteAsync(senderAccount.AccountNumber, recipientAccount.AccountNumber, 300m);
+        await useCase.ExecuteAsync(senderAccount.AccountNumber, recipientAccount.AccountNumber, 200m);
+
+        // Assert
+        var finalSenderAccount = dbContext.BankAccounts.First(a => a.Id == senderAccount.Id);
+        var finalRecipientAccount = dbContext.BankAccounts.First(a => a.Id == recipientAccount.Id);
+
+        Assert.Equal(4000m, finalSenderAccount.Balance.Amount); // 5000 - 1000
+        Assert.Equal(1000m, finalRecipientAccount.Balance.Amount); // 0 + 1000
+    }
+}
