@@ -1,7 +1,7 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET
+name: Pipeline
 
 on:
   push:
@@ -81,7 +81,15 @@ jobs:
     - name: deploy
       run: echo 'Deploy STG'
       
-  
+  SmokeTesSTG:
+    runs-on: ubuntu-latest
+    needs: DeploySTG
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: deploy
+      run: echo 'Smoke Test STG'
+
   IntegrationTest:
     runs-on: ubuntu-latest
     needs: DeploySTG
@@ -93,4 +101,43 @@ jobs:
         dotnet-version: 10.0.x
     - name: TestIntegration
       run: dotnet test tests/Core.Tests/Core.Tests.csproj --filter 'Integration&FullyQualifiedName!~ErrorSimulation' --logger 'trx' --results-directory ./TestResults
-      
+
+  DeployPreProd:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: deploy
+      run: echo 'Deploy PreProd'
+
+  SmokeTestPreProd:
+    runs-on: ubuntu-latest
+    needs: DeployPreProd
+
+    steps:
+    - name: deploy
+      run: echo 'Smoke Test PreProd'
+
+  FunctionalTest:
+    runs-on: ubuntu-latest
+    needs: SmokeTestPreProd
+
+    steps:
+    - name: deploy
+      run: echo 'FunctionalTest'
+
+  DeployProd:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: deploy
+      run: echo 'Deploy Prod'
+
+  SmokeProd:
+    runs-on: ubuntu-latest
+    needs: DeployProd
+
+    steps:
+    - name: deploy
+      run: echo 'Smoke Test Prod'     
