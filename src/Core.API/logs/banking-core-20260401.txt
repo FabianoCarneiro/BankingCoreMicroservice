@@ -1,0 +1,121 @@
+2026-04-01 16:15:24.930 -03:00 [INF] Iniciando aplicação Banking Core Microservice
+2026-04-01 16:15:25.396 -03:00 [INF] Now listening on: http://localhost:5000
+2026-04-01 16:15:25.408 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-01 16:15:25.410 -03:00 [INF] Hosting environment: Production
+2026-04-01 16:15:25.411 -03:00 [INF] Content root path: /Users/fabianocarneiro/BankingCoreMicroservice/src/Core.API
+2026-04-01 16:15:41.662 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-01 16:15:42.307 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:15:42.594 -03:00 [INF] Inicializando banco de dados...
+2026-04-01 16:15:45.288 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-04-01 16:15:45.356 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-04-01 16:15:45.367 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2026-04-01 16:15:45.406 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-04-01 16:15:45.461 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-04-01 16:15:45.986 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Customers" AS "c")
+2026-04-01 16:15:45.992 -03:00 [INF] Banco de dados inicializado com sucesso
+2026-04-01 16:15:46.069 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-01 16:15:46.106 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 4456.9628ms
+2026-04-01 16:15:46.114 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-01 16:15:46.438 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-04-01 16:15:46.440 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:15:46.446 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 8.181ms
+2026-04-01 16:15:46.447 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2026-04-01 16:16:02.157 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/swagger - null null
+2026-04-01 16:16:02.184 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:16:02.192 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/swagger - 404 0 null 37.7384ms
+2026-04-01 16:16:02.195 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/api/swagger, Response status code: 404
+2026-04-01 16:16:12.010 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2026-04-01 16:16:12.024 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:16:12.042 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 301 0 null 32.5163ms
+2026-04-01 16:16:12.090 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-01 16:16:12.093 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:16:12.488 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 397.1008ms
+2026-04-01 16:16:13.609 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-01 16:16:13.610 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:16:13.806 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2026-04-01 16:16:13.808 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:16:13.809 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-16x16.png - null null
+2026-04-01 16:16:13.810 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:16:13.893 -03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2026-04-01 16:16:13.893 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-04-01 16:16:13.893 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-16x16.png - 200 665 image/png 84.2185ms
+2026-04-01 16:16:13.894 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 87.0668ms
+2026-04-01 16:16:14.521 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 911.9223ms
+2026-04-01 16:28:12.818 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-01 16:28:12.859 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:28:12.993 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 179.969ms
+2026-04-01 16:28:29.317 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/api/Customers - null null
+2026-04-01 16:28:29.326 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:28:29.343 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/api/Customers - 404 0 null 26.2144ms
+2026-04-01 16:28:29.347 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/swagger/api/Customers, Response status code: 404
+2026-04-01 16:28:37.625 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-01 16:28:37.630 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:28:37.831 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 206.1187ms
+2026-04-01 16:29:04.451 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Customers - application/json 89
+2026-04-01 16:29:04.479 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:29:04.507 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-04-01 16:29:04.674 -03:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCustomer(Core.Application.DTOs.CreateCustomerDTO) on controller Core.API.Controllers.CustomersController (Core.API).
+2026-04-01 16:29:04.844 -03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-01 16:29:04.877 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.CreateCustomer (Core.API) in 194.7037ms
+2026-04-01 16:29:04.877 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.CreateCustomer (Core.API)'
+2026-04-01 16:29:04.878 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Customers - 400 null application/json; charset=utf-8 427.7457ms
+2026-04-01 16:29:19.645 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customers - null null
+2026-04-01 16:29:19.646 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:29:19.647 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-04-01 16:29:19.664 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-04-01 16:29:19.923 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-04-01 16:29:20.057 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-01 16:29:20.078 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 413.1214ms
+2026-04-01 16:29:20.078 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-04-01 16:29:20.080 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customers - 200 null application/json; charset=utf-8 435.3695ms
+2026-04-01 16:30:22.881 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-01 16:30:22.895 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:30:23.357 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 463.0329ms
+2026-04-01 16:30:27.415 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Customers - null null
+2026-04-01 16:30:27.418 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:30:27.422 -03:00 [INF] Executing endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-04-01 16:30:27.425 -03:00 [INF] Route matched with {action = "ListAllCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllCustomers() on controller Core.API.Controllers.CustomersController (Core.API).
+2026-04-01 16:30:27.682 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CPF", "c"."CreatedAt", "c"."Email", "c"."IsActive", "c"."Name", "c"."PhoneNumber", "c"."UpdatedAt"
+FROM "Customers" AS "c"
+2026-04-01 16:30:27.694 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Application.DTOs.CustomerDTO, Core.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-01 16:30:27.697 -03:00 [INF] Executed action Core.API.Controllers.CustomersController.ListAllCustomers (Core.API) in 271.9297ms
+2026-04-01 16:30:27.698 -03:00 [INF] Executed endpoint 'Core.API.Controllers.CustomersController.ListAllCustomers (Core.API)'
+2026-04-01 16:30:27.698 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Customers - 200 null application/json; charset=utf-8 283.3347ms
+2026-04-01 16:31:43.632 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-01 16:31:43.691 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:43.761 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 138.5887ms
+2026-04-01 16:31:43.945 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - null null
+2026-04-01 16:31:43.946 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:43.948 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - 404 0 null 3.1007ms
+2026-04-01 16:31:43.950 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon-precomposed.png, Response status code: 404
+2026-04-01 16:31:43.956 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - null null
+2026-04-01 16:31:43.957 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:43.959 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - 404 0 null 2.3166ms
+2026-04-01 16:31:43.959 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon.png, Response status code: 404
+2026-04-01 16:31:43.975 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2026-04-01 16:31:43.976 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:44.042 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-04-01 16:31:44.043 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 66.9935ms
+2026-04-01 16:31:44.652 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-01 16:31:44.653 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:44.654 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 1.605ms
+2026-04-01 16:31:44.672 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - null null
+2026-04-01 16:31:44.673 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:44.674 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon-precomposed.png - 404 0 null 1.779ms
+2026-04-01 16:31:44.675 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon-precomposed.png, Response status code: 404
+2026-04-01 16:31:44.685 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - null null
+2026-04-01 16:31:44.685 -03:00 [INF] Usando SQLite: Data Source=banking.db
+2026-04-01 16:31:44.686 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/apple-touch-icon.png - 404 0 null 0.8892ms
+2026-04-01 16:31:44.686 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/apple-touch-icon.png, Response status code: 404
